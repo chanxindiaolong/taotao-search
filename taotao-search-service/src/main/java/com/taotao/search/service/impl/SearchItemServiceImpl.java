@@ -6,11 +6,13 @@ import org.apache.solr.client.solrj.SolrServer;
 import org.apache.solr.common.SolrInputDocument;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.taotao.common.pojo.SearchItem;
 import com.taotao.common.utils.TaotaoResult;
 import com.taotao.search.mapper.SearchItemMapper;
 import com.taotao.search.service.SearchItemService;
 
+@Service
 public class SearchItemServiceImpl implements SearchItemService {
 
 	@Autowired
